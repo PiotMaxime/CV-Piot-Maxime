@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'aileronregular';
+    src: url('Police/Aileron-Regular-webfont.eot');
+    src: url('Police/Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Police/Aileron-Regular-webfont.woff2') format('woff2'),
+         url('Police/Aileron-Regular-webfont.woff') format('woff'),
+         url('Police/Aileron-Regular-webfont.ttf') format('truetype'),
+         url('Police/Aileron-Regular-webfont.svg#aileronregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cadmanregular';
+    src: url('Police/Cadman_Roman-webfont.eot');
+    src: url('Police/Cadman_Roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Police/Cadman_Roman-webfont.woff2') format('woff2'),
+         url('Police/Cadman_Roman-webfont.woff') format('woff'),
+         url('Police/Cadman_Roman-webfont.ttf') format('truetype'),
+         url('Police/Cadman_Roman-webfont.svg#cadmanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body
+{
+    font-family: 'cadmanregular', Arial, Helvetica, sans-serif;
+    background-color: rgb(50,50,50);
+}
+#Blocpage
+{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1000px;
+    margin: auto;
+}
+/* Section Droite*/
+#SecDroite
+{
+    background-color: white;
+    flex: 1;
+}
+
+/*Section Gauche*/
+#SecGauche
+{
+    background-color: rgb(30, 120, 40);
+    flex: 0;
+}

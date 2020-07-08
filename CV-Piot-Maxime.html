@@ -2,18 +2,21 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="CVpiot.css" />
         <title>CV Piot Maxime</title>
         <script src="https://kit.fontawesome.com/b5c0077aa8.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="Blocpage">
             <!--Section de Droite-->
-            <section>
+            <section id="SecDroite">
+                <!--Entête-->
                 <header>
                     <h1>Maxime Piot</h1>
                     <h2>Développeur Web Freelance</h2>
                 </header>
-                <article>
+                <!--Formation-->
+                <article id="Formation">
                     <i class="fas fa-graduation-cap"></i>
                     <h3>Formation</h3>
                     <div>
@@ -30,7 +33,10 @@
                                 <p>
                                     Formation débuté le 15 Juin 2020 pour un durée de 6mois.</br>
                                     Base d'apprentissage sur HTML, CSS, Visual Studio Code, Git et GitHub.</br>
-                                    Avec cette base de la formation, ceci me permet de faire ce magnifique CV.
+                                    Avec cette base de la formation, ceci me permet de faire ce magnifique CV. </br>
+                                    Compétences acquise: Savoir utilisé et mettre en place un site web avec un code HTML et CSS, </br>
+                                    savoir utilisé Git et GitHub avec ou sans interface de visuel, </br>
+                                    savoir utilisé les bases sur un terminal Linux, </br>
                                 </p>
                             </div>
                         </div>
@@ -46,7 +52,7 @@
                                 <em>Titre professionnel</em>
                                 <p>
                                     Formation de 8 mois de niveau Bac de Technicien d’Assistance en Informatique. </br>
-                                    Compétence acquise: Démontage et remontage d'ordinateur, Utilisation de logiciel divers (Word,Excel,...), </br>
+                                    Compétences acquise: Démontage et remontage d'ordinateur, Utilisation de logiciel divers (Word,Excel,...), </br>
                                     utilisation de logiciel de nettoyage (Cclenar, KillerRogue,...), installation du base de données OCS et GLPI, </br>
                                     configuration un réseau informatique, guider une personne à utiliser un ordinateur.
                                 </p>
@@ -54,22 +60,70 @@
                         </div>
                     </div>
                 </article>
-                <article>
+                <!--Exp Pro-->
+                <article id="Exp-Pro">
                     <i class="fas fa-briefcase"></i>
                     <h3>Expériences Professionnelles</h3>
                     <div>
                         <div>
-                            <i class="fas fa-angle-double-right"></i>2019 - 2020 : Bénévolat Administrateur Serveur sur un Discord Gamer. (1 an)                       
+                            <div>
+                                <i class="fas fa-angle-double-right"></i>
+                                <p>2019 - 2020</br>
+                                    Saint-Maixent L'école
+                                </p> 
+                            </div>
+                            <div>
+                                <h4>Administrateur Serveur</h4>
+                                <em>Travail Bénévole sur Discord</em>
+                                <p>
+                                    Bénévole en tant qu'Administrateur sur une plateforme vocal Discord Gamer. </br>
+                                    Le but de ce travail était de gérer une communauté de joueur sur le notre serveur du jeu.</br>
+                                    Compétences acquise: Utilisation d'un Discord en tant qu'Administrateur, </br>
+                                    savoir gérer les plaintes de joueurs envers un autre joueurs, </br>
+                                    avoir des idées créatives d'évènements pour animer le serveur du jeu, bonne entente avec ses collèges, </br>
+                                    connaître les lignes de commandes du jeu pour gérer les urgences ou autres actions qui en a besoin.
+                                </p>
+
+                            </div>                       
                         </div>
                         <div>
-                            <i class="fas fa-angle-right"></i>2014 : Stage à l’ENSOA de Saint-Maixent L’école, avec la Dirisi dans le Détachement Informatique (6 semaines)
+                            <div>
+                            <i class="fas fa-angle-right"></i>
+                            <p>2014 </br>
+                                Saint-Maixent L'école
+                            </p>
+                            </div> 
+                            <div>
+                                <h4>la Dirisi dans le Détachement Informatique</h4>
+                                <em>Stage à l’ENSOA</em>
+                                <p>
+                                    Stage de 6 semaine dans une caserne militaire en tant que Technicien d'Assistance en Informatique. </br>
+                                    Pour des raisons de confidentialité, je n'évoquerai que le stricte minimum sur ce que j'ai pu faire. </br>
+                                    Compétences
+                                </p>
+                            </div>
                         </div>
                         <div>
-                            <i class="fas fa-angle-right"></i>2012 : Micro St Maix (Magasin d'informatique : vente et installation) Découverte du métier de technicien de maintenance informatique en vue d'une formation par le Pôle Emploi (5 jour)
+                            <div>
+                            <i class="fas fa-angle-right"></i>
+                                <p>2012</br>
+                                    Saint-Maixent L'école
+                                </p> 
+                            </div>
+                            <div>
+                                <h4>Dépanneur Informatique</h4>
+                                <em>Micro St-Maix</em>
+                                <p>
+                                    Découverte du métier de technicien de maintenance informatique pour une durée de 5 jours. </br>
+                                    Compétences acquise: Analyse de problème informatiquen, nettoyage d'un ordinateur, </br>
+                                    installation de logiciel de nettoyage et anti-virus, installation de system d'explotation et de pilote.                                    
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </article>
-                <article>
+                <!--Recommandation-->
+                <article id="Recommandation">
                     <i class="fas fa-users"></i>
                     <h3>Recommandations</h3>
                         <div>
@@ -87,9 +141,10 @@
                 </article>
             </section>
             <!--Section de Gauche-->
-            <section>
+            <section id="SecGauche">
                 <img src="Image/Photo.png" alt="Photo" />
-                <div>
+                <!--Contact-->
+                <div id="Contact">
                     <h4>Contact</h4>
                     <p>
                         Adresse<br />Saint-Maixent l'école, France
@@ -105,16 +160,18 @@
                         <span>Discord</span><br />Kao#0000
                     </p>
                 </div>
-                <div>
+                <!--A propos-->
+                <div id="A-propos">
                     <h4>À propos de moi</h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed lorem mollis, dignissim neque quis, porta dolor. Ut imperdiet eu urna sed convallis. Ut blandit varius elit eu lobortis. Vestibulum rutrum ut nisi non rhoncus. Donec ornare erat at est commodo tristique. Maecenas suscipit mollis consectetur. Fusce sed luctus dolor. Proin non aliquet nulla, vel sagittis neque. Aliquam iaculis pharetra nulla et hendrerit. Sed vestibulum orci in enim sollicitudin, vel dignissim nisi placerat. Etiam sit amet rutrum elit. Etiam tristique massa eget dignissim rhoncus. Proin ut magna in nisl faucibus volutpat ac ut est. Ut eget pulvinar lectus, ac lobortis erat.</p>
                 </div>
-                <div>
+                <!--Loisirs-->
+                <div id="Loisirs">
                     <h4>Loisirs</h4>
                     <i class="fas fa-dice-d20"></i>
                     <i class="fab fa-steam"></i>
-                    <i class="fab fa-discord"></i>
+                    <i class="fas fa-theater-masks"></i>
                 </div>
             </section>
         </div>
