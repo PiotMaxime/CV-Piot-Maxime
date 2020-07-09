@@ -35,31 +35,146 @@ body
     width: 1200px;
     margin: auto;
 }
-#Blocpage h1,h2,h3,h4
+#Blocpage h1,h3,h4
 {
     text-transform: uppercase;
+}
+p
+{
+    font-family: 'cadmanregular', Arial, Helvetica, sans-serif;
 }
 /*>Section Droite*/
 #SecDroite
 {
     background-color: white;
-    width: 850px;
+    width: 800px;
+    padding: 5%;
 }
-header
+#SecDroite i
 {
-    
+    color: rgb(30, 120, 40);
+    font-size: 2.5em;
 }
+#BlocSimple i
+{
+    font-size: 1em;
+    border: 2px solid rgb(30, 120, 40);
+    border-radius: 50%;
+    align-self: baseline;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    margin-top: 6%;    
+}
+#BlocSimple
+{
+    display: flex;
+    padding-bottom: 5%; 
+}    
+#SousTitre
+{
+    border-bottom: 2px solid rgb(30, 120, 40);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3%;
+    height: 50px;
+}
+#SousTitre h3 
+{
+    padding-left: 3%;
+    text-align: center;
+    align-self: center;
+    font-size: 2em;
+    font-weight: normal;
+}
+/*En tete*/
+h1
+{
+    font-size: 3em;
+    font-weight: normal;
+}
+h1 span
+{
+    color: rgb(30, 120, 40);
+    font-weight: bold;
+}
+h2
+{
+    margin-top: -5%;
+    font-size: 2em;
+    font-weight: normal;
+    padding-bottom: 8%;
+}
+h2 span
+{
+    border-bottom: 2px solid rgb(30, 120, 40);
+}
+#BS-01
+{
+    width: 400px;
+    display: flex;
+    align-self: start;
+}
+#BS-01 p
+{
+    padding-left: 10%;
+    font-weight: bold;
+}
+#BS-02
+{
+    width: 500px;
+    margin-top: -13px;
+}
+#BS-02 h4
+{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+#BS-02 em
+{
+    font-size: 1.2em;
+    font-style: normal;
+}    
+#BS-02 p
+{
+    text-align: justify;
+}
+#Recommandation
+{
+    display: flex;
+}
+#Recommandation h4
+{
+    margin-top: 1%;
+    font-size: 1.3em;
+    margin-bottom: 2px;
+}
+#Recommandation em
+{
+    font-size: 15px;
+    font-style: normal;
+    margin-bottom: 3px;
+}
+#Louis
+{
+    width: 400px;
+}
+#Lydia
+{
+    width: 400px;
+}
+/*>Fin Section Droite*/
 /*<Section Gauche*/
 #SecGauche
 {
     background-color: rgb(30, 120, 40);
-    width: 350px;
+    width: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 3%;
     padding-bottom: 3%;
-    text-align: justify;
     color: rgb(0, 30, 0);
 }
 #SecGauche h4
@@ -67,17 +182,21 @@ header
     background-color: rgb(0, 30, 0);
     color: rgb(30, 120, 40);
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
 }
+/*Photo*/
 #SecGauche img
 {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+    border: 3px solid white;
+    border-radius: 50%;
 }
+/*Contact*/
 #Contact
 {
     flex: 1;
-    margin-top: -300px;
+    margin-top: -380px;
 }
 #Contact p
 {
@@ -87,14 +206,17 @@ header
 {
     font-weight: bold;
 }
+/*A propos*/
 #A-propos
 {
-    margin-top: -300px;
+    margin-top: -380px;
 }
 #A-propos p
 {
+    text-align: justify;
     margin: 10%;
 }
+/*Loisirs*/
 #Loisirs
 {
     align-self: flex-end;
@@ -111,3 +233,4 @@ header
 {
     font-size: 2.5em;
 }
+/*<Fin Section Gauche*/
