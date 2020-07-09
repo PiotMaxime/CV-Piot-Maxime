@@ -22,28 +22,92 @@
     font-style: normal;
 
 }
+/*--Version Desktop*/
 body
 {
-    font-family: 'cadmanregular', Arial, Helvetica, sans-serif;
+    font-family: 'aileronregular', Arial, Helvetica, sans-serif;
     background-color: rgb(50,50,50);
 }
 #Blocpage
 {
     display: flex;
     flex-direction: row-reverse;
-    width: 1000px;
+    width: 1200px;
     margin: auto;
 }
-/* Section Droite*/
+#Blocpage h1,h2,h3,h4
+{
+    text-transform: uppercase;
+}
+/*>Section Droite*/
 #SecDroite
 {
     background-color: white;
-    flex: 1;
+    width: 850px;
 }
-
-/*Section Gauche*/
+header
+{
+    
+}
+/*<Section Gauche*/
 #SecGauche
 {
     background-color: rgb(30, 120, 40);
-    flex: 0;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: justify;
+    color: rgb(0, 30, 0);
+}
+#SecGauche h4
+{
+    background-color: rgb(0, 30, 0);
+    color: rgb(30, 120, 40);
+    text-align: center;
+    font-size: 2em;
+}
+#SecGauche img
+{
+    width: 250px;
+    height: 250px;
+}
+#Contact
+{
+    flex: 1;
+    margin-top: -300px;
+}
+#Contact p
+{
+    margin-left: 10%;
+}
+#Contact span
+{
+    font-weight: bold;
+}
+#A-propos
+{
+    margin-top: -300px;
+}
+#A-propos p
+{
+    margin: 10%;
+}
+#Loisirs
+{
+    align-self: flex-end;
+    flex: 1;
+    text-align: center;
+    color: rgb(0, 30, 0);
+}
+#IconeLoisirs
+{
+    display: flex;
+    justify-content: space-around;
+}
+#Loisirs i
+{
+    font-size: 2.5em;
 }
