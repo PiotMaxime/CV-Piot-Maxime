@@ -183,8 +183,7 @@ h2 span
 /*Photo*/
 .Photo
 {
-    margin-left: auto;
-    margin-right: auto; 
+    text-align: center;
 }
 .Photo img
 {
@@ -234,3 +233,72 @@ h2 span
 /*--Fin Version Desktop*/
 
 /*--Début Version Tablette*/
+@media all and (max-width: 900px)
+{
+    .Blocpage
+    {
+        width: auto;
+    }
+    /*-Flex Tablette*/
+    .Tab-Column
+    {
+        flex-direction: column;
+    }
+
+    /*-Fin Flex Tablette*/
+    h1
+    {
+        font-size: 2.4em;
+    }
+    h2 
+    {
+        width: 200px;
+        font-size: 1.5em;
+    }
+    /*Tablette-Haut*/
+    .SecDroite
+    {
+        width: auto;
+        padding: 0 8% 0% 8%;
+    }
+    .Sujet p 
+    {
+        text-align: start;
+    }
+    .Date
+    {
+        min-width: 150px;
+    }
+    .Sujet
+    {
+        margin-left: 5%;
+    }
+    .Recommandation article
+    {
+        margin-bottom: 5%;
+    }
+    /*Tablette-Bas*/
+    .SecGauche
+    {
+        width: auto;
+    }
+    .Contact
+    {
+        margin-top: -5%;
+    }
+    .Loisirs
+    {
+        padding-bottom: 3%;
+    }
+    .Photo
+    {
+        position: absolute;
+        top: 3em;
+        right: 1em;
+    }
+    .Photo img
+    {
+        width: 180px;
+        height: 180px;
+    }
+}
