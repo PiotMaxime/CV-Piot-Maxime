@@ -23,6 +23,32 @@
 
 }
 /*--Version Desktop*/
+/*-Balisage Flex*/
+.Flex
+{
+    display: flex;
+}
+.Flex-RowReverse
+{
+    flex-direction: row-reverse;
+}
+.Flex-Column
+{
+    flex-direction: column;
+}
+.Flex-Justify-Center
+{
+    justify-content: center;
+}
+.Flex-Align-Center
+{
+    align-items: center;
+}
+.Flex-SpaceAround
+{
+    justify-content: space-around;
+}
+/*-Fin Balisage Flex*/
 body
 {
     font-family: 'aileronregular', Arial, Helvetica, sans-serif;
@@ -30,9 +56,7 @@ body
 }
 .Blocpage
 {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
 }
 .Blocpage h1,h3,h4
@@ -47,10 +71,8 @@ p
 .SecDroite
 {
     background-color: white;
-    width: 70%;
-    padding: 5%;
-    display: flex;
-    flex-wrap: wrap;
+    width: 65%;
+    padding: 0 3% 0 3%
 }
 .SecDroite i
 {
@@ -59,33 +81,20 @@ p
 }
 article
 {
-    display: flex;
     padding-bottom: 5%; 
 }    
 .SousTitre
 {
     border-bottom: 2px solid rgb(30, 120, 40);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin-bottom: 3%;
     height: 50px;
-    flex: 1;
 }
 .SousTitre h3 
 {
     padding-left: 3%;
-    text-align: center;
-    align-self: center;
     font-size: 1.5em;
 }
 /*En tete*/
-.Principal
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 h1
 {
     padding-top: 10%;
@@ -99,7 +108,6 @@ h1 span
 }
 h2
 {
-    margin-top: -10%;
     font-size: 2em;
     font-weight: normal;
     padding-bottom: 15%;
@@ -111,32 +119,28 @@ h2 span
 /*Formation + Expérience Pro*/
 .Date
 {
-    display: flex;
-    width: 130%;
+    min-width: 200px;
 }
 .Date i
 {
-    margin-top: 65%;
+    margin-top: 120%;
     border: 2px solid rgb(30, 120, 40);
     border-radius: 50%;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle; 
     width: 20px;
     height: 20px;
     font-size: 1.2em;
-    float: left;
+    text-align: center;
 }
 .Date p
 {
+    margin-top: 15%;
     font-weight: bold;
     font-size: 17px;
     padding-left: 5%;
 }
 .Sujet
 {
-    margin-top: -2%;
-    width: 150%;
+    margin-left: 20%;
 }
 .Sujet h4
 {
@@ -152,29 +156,13 @@ h2 span
     text-align: justify;
 }
 /*Recommandation*/
-.Recommandation
-{
-    display: flex;
-    flex-wrap: wrap;
-}
-.Recommandation section
-{
-    display: flex;
-}
 .Recommandation h4
 {
     font-size: 1.5em;
 }
-.Louis
-{
-    display: flex;
-    flex-direction: column;
-    padding-right: 40%;
-}
 .Lydia
 {
-    display: flex;
-    flex-direction: column;
+    margin-left: 10%;
 }
 /*>Fin Section Droite*/
 /*<Section Gauche*/
@@ -182,27 +170,21 @@ h2 span
 {
     background-color: rgb(30, 120, 40);
     width: 30%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     color: rgb(0, 30, 0);
-    align-content: flex-start;
     padding-top: 3%;
 }
 .SecGauche h4
 {
     background-color: rgb(0, 30, 0);
     color: rgb(30, 120, 40);
-    text-align: center;
     font-size: 1.5em;
+    text-align: center;
 }
 /*Photo*/
 .Photo
 {
-    display: flex;
     margin-left: auto;
     margin-right: auto; 
-    align-items: center; 
 }
 .Photo img
 {
@@ -210,12 +192,6 @@ h2 span
     border-radius: 50%;
 }
 /*Contact*/
-.Contact
-{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
 .Contact p
 {
     margin-left: 10%;
@@ -227,8 +203,7 @@ h2 span
 /*A propos*/
 .A-propos
 {
-    display: flex;
-    flex-direction: column;
+    flex-grow: 1;
 }
 .A-propos p
 {
@@ -238,22 +213,15 @@ h2 span
 /*Loisirs*/
 .Loisirs
 {
-    position: relative;
-    top: 1040px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    text-align: center;
     color: rgb(0, 30, 0);
 }
 .IconeLoisirs
 {
-    display: flex;
-    justify-content: space-around;
     padding-bottom: 3%;
 }
 .Loisirs i
 {
+    text-align: center;
     display: table-cell;
     vertical-align: middle;
     width: 60px;
