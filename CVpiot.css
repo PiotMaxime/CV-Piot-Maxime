@@ -2,7 +2,6 @@
     font-family: 'aileronregular';
     src: url('Police/Aileron-Regular-webfont.eot');
     src: url('Police/Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Police/Aileron-Regular-webfont.woff2') format('woff2'),
          url('Police/Aileron-Regular-webfont.woff') format('woff'),
          url('Police/Aileron-Regular-webfont.ttf') format('truetype'),
          url('Police/Aileron-Regular-webfont.svg#aileronregular') format('svg');
@@ -14,7 +13,6 @@
     font-family: 'cadmanregular';
     src: url('Police/Cadman_Roman-webfont.eot');
     src: url('Police/Cadman_Roman-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Police/Cadman_Roman-webfont.woff2') format('woff2'),
          url('Police/Cadman_Roman-webfont.woff') format('woff'),
          url('Police/Cadman_Roman-webfont.ttf') format('truetype'),
          url('Police/Cadman_Roman-webfont.svg#cadmanregular') format('svg');
@@ -244,7 +242,6 @@ h2 span
     {
         flex-direction: column;
     }
-
     /*-Fin Flex Tablette*/
     h1
     {
@@ -261,26 +258,64 @@ h2 span
         width: auto;
         padding: 0 8% 0% 8%;
     }
-    .Sujet p 
+    .SousTitre i 
     {
-        text-align: start;
+        font-size: 30px;
+    }
+    .SousTitre h3
+    {
+        font-size: 1.3em;
+    }
+    .SecDroite h4
+    {
+        font-size: 1.1em;
+    }
+    .SecDroite em 
+    {
+        font-size: initial;
+    }
+    .SecDroite p 
+    {
+        font-size: small;
     }
     .Date
     {
         min-width: 150px;
     }
+    .Date i 
+    {
+        width: 16px;
+        height: 16px;
+        font-size: 1em;
+    }
     .Sujet
     {
         margin-left: 5%;
+    }
+    .Sujet p 
+    {
+        text-align: start;
     }
     .Recommandation article
     {
         margin-bottom: 5%;
     }
+    .Recommandation strong 
+    {
+        font-size: 0.9em;
+    }
     /*Tablette-Bas*/
     .SecGauche
     {
         width: auto;
+    }
+    .SecGauche h4 
+    {
+        font-size: 1.3em;
+    }
+    .SecGauche p 
+    {
+        font-size: 0.8em;
     }
     .Contact
     {
@@ -289,6 +324,12 @@ h2 span
     .Loisirs
     {
         padding-bottom: 3%;
+    }
+    .Loisirs i 
+    {
+        font-size: 1.7em;
+        width: 40px;
+        height: 40px;
     }
     .Photo
     {
@@ -302,3 +343,46 @@ h2 span
         height: 180px;
     }
 }
+/*--Fin Version Tablette*/
+
+/*--Début Version Téléphone*/
+@media all and (max-width: 500px)
+{
+    .SecDroite
+    {
+        padding-top: 150px;
+    }
+    .SousTitre h3
+    {
+        font-size: 1.2em;
+    }
+    .Phone-Column
+    {
+        flex-direction: column;
+    }
+    .Date i
+    {
+        margin-top: 40px;
+    }
+    .Date p 
+    {
+        margin-top: 40px;
+        font-size: 1em;
+    }
+    .Lydia
+    {
+        margin-left: initial;
+    }
+    .Photo
+    {
+        top: 2em;
+        left: 3em;
+        right: initial;
+    }
+    .Photo img 
+    {
+        width: 150px;
+        height: 150px;
+    }
+}
+/*--Fin Version Téléphone*/
