@@ -52,6 +52,10 @@ body
     font-family: 'aileronregular', Arial, Helvetica, sans-serif;
     background-color: rgb(50,50,50);
 }
+footer
+{
+    text-align: center;
+}
 .Blocpage
 {
     max-width: 1200px;
